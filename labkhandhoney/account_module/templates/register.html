@@ -5,6 +5,15 @@
     <title>login</title>
 </head>
 <body>
+    <form method="post" action="register.html">
+        {% csrf_token %}
+        {{ register_form.email.label_tag }}
+        {{ register_form.email }}
+        {{ register_form.password.label_tag }}
+        {{ register_form.password }}
+        {{ register_form.password2.label_tag }}
+        {{ register_form.password2 }}
 
+    </form>
 </body>
 </html>

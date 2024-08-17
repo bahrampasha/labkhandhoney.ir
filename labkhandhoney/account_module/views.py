@@ -9,6 +9,7 @@ class RegisterView(View):
     def get(self, request):
         register_form = RegisterForm()
         context = {'register_form': register_form}
-        return render(request, '' , context)
+        return render(request, 'register.html', context)
+
     def post(self, request):
         pass
