@@ -1,0 +1,120 @@
+@font-face {
+    font-family: IRANSans;
+    src: url("../fonts/IRANSans/IRANSansWeb_Light.woff");
+}
+*{
+    direction: rtl;
+    text-align: right;
+    font-family: IRANSans;
+}
+header{
+    height: 70px;
+    width: 100%;
+    border-bottom: #dcdcdc solid 1px;
+    align-items: center;
+    justify-content: space-evenly;
+    /*background: #ffffff;*/
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+.logotype{ height: 60px}
+
+.navigation{
+    padding: 15px 0;
+    margin-bottom: -35px;
+}
+.navigation a{
+    font-family: IRANSans;
+    color: #333333;
+    text-decoration: none;
+    font-size: 0.9rem;
+    margin-left: 50px;
+    position: relative;
+}
+.navigation a:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    border-radius: 5px;
+    background: orange;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigation a:hover:after{
+    transform: scaleX(1);
+}
+
+.search-area{
+    background-color: #dcdcdc;
+    padding: .3rem .6rem;
+    border-radius: 0.8rem;
+}
+.search-input{
+    background-color: rgba(0, 0, 0, 0);
+    outline: none;
+    border: none;
+    margin: 0 .6rem ;
+}
+.register-btn{
+    border: #dcdcdc solid 1px;
+    border-radius: 0.4rem;
+    padding: 0.3rem;
+}
+.register-btn a{
+    color: #333333;
+    text-decoration: none;
+}
+.vertical-line{
+    background: #dcdcdc;
+    width: 1px;
+    height: 24px;
+}
+.cart-icon{
+    text-decoration: none;
+    color: #333333;
+    font-size: 1.5rem;
+}
+.banner{
+    background: url("../images/banner1.jpg") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    min-height: 70vh;
+}
+.banner-title h2{
+    font-size: 6rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+}
+.banner-title p{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: left;
+}
+.banner-title{
+position: absolute;
+    top: 150px;
+    left: 100px;
+}
+.carousel-inner img{
+    width: 100%;
+    height: 100%;
+}
+.carousel-caption h2{
+    font-size: 5rem;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: left;
+}
+.carousel-caption p{
+    font-size: 2rem;
+    color: #ffffff;
+    font-weight: 500;
+    text-align: left;
+}
+
